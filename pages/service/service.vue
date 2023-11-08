@@ -365,7 +365,7 @@
 				// loading
 				this.msgLoad = true
 				uni.request({
-					url: 'http://funuoai.funzoe.cn/dialogue',
+					url: 'http://localhost:3000/dialogue',
 					method: 'POST',
 					data: {
 						product: this.product,
@@ -410,7 +410,7 @@
 			// bing搜索
 			handleBing(query) {
 				uni.request({
-					url: 'http://funuoai.funzoe.cn/bing',
+					url: 'http://funuoai.funzoe.cngit commit -m "first commit"/bing',
 					method: 'POST',
 					// `intitle:${query}`
 					data: {
