@@ -1,0 +1,58 @@
+{
+	// 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/service/service",
+			"style": {
+				"app-plus": {
+					"softinputNavBar": "none"
+				},
+				"navigationStyle": "default",
+				"navigationBarTitleText": "智能问答",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#007BC7"
+			}
+
+		}, {
+			"path": "pages/details/details",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "问答知识详情",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#007BC7"
+			}
+
+		}
+	    ,{
+            "path" : "pages/drug/drug",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"navigationBarTitleText": "药品详情",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#007BC7"
+            }
+            
+        }
+        ,{
+            "path" : "pages/webview/webview",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {}
+}
